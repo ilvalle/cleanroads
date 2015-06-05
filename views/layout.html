@@ -20,6 +20,8 @@
   <link href="{{=URL('static','css/web2py_bootstrap.css')}}" rel="stylesheet" media="screen,projection,print" type="text/css" /-->
   {{include 'web2py_ajax.html'}}
   {{#include 'metadata.html'}}
+  <link rel="stylesheet" href="http://cookiebanner.tis.bz.it/css/iframe.css" type="text/css">
+  <script type="text/javascript" src="http://cookiebanner.tis.bz.it/js/iframescript.js"></script>
 </head>
 <!--  ng-cloak -->
 <body>
@@ -82,5 +84,7 @@
           ga('create', 'UA-60589558-1', 'auto');
           ga('send', 'pageview');
     </script>
+    
+    <iframe src="http://cookiebanner.tis.bz.it" id="myiframe" scrolling="no" frameborder="0"><p>Text if the browser doesn't support IFrames</p></iframe>
 </body>
 </html>
